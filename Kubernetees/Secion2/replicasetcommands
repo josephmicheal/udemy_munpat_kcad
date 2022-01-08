@@ -1,0 +1,8 @@
+kubectl create -f replicaset_definition.yml
+
+kubectl replace -f replicaset_definition.yml
+
+
+kubectl scale --replicas=5 -f replicaset_definition.yml > this will not update file
+
+kubectl scale --replicas=7 replicaset  myapp-replicaset

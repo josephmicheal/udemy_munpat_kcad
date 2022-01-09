@@ -1,0 +1,7 @@
+
+
+
+
+kubectl taint nodes node01 spray=mortein:NoSchedule
+
+kubectl run bee --image=nginx taint spray=mortein:NoSchedule
